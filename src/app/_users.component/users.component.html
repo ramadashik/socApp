@@ -1,0 +1,16 @@
+<body>
+  <div *ngFor="let user of users" class="user">
+    <div>
+      <a [routerLink]="['/user', user.id]"><img src="{{user?.imgUrl}}" class="photo"></a>
+    </div>
+    <div id="infowrapper">
+      <ul class="userinfo">
+        <a [routerLink]="['/user', user.id]">
+          <span class="active">{{user?.firstName}} {{user?.secondName}}</span>
+        </a>
+        <li>{{user?.specialization}}</li>
+      </ul>
+    </div>
+  </div>
+</body>
+

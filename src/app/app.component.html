@@ -1,12 +1,26 @@
-<div>
-  <div class="image">
-    <img src="https://pp.userapi.com/c622126/v622126221/5a87c/yWg5Qfis6u0.jpg">
-  </div>
-  <div class="yoba">
-    <H1>ALO, ETO {{name}}?</H1>
-  </div>
-  <div class="base-info">
-    {{baseInfo}}
-  </div>
-</div>
-
+    <div id="wrapper">
+        <header>
+            <a href="/"><img src="./app/whitesquare%20logo.png" alt="Whitesquare logo"></a>
+        </header>
+        <nav>
+            <ul class="top-menu">
+                <li [routerLinkActive]="['active']"><a [routerLink]="['user/1']">PROFILE</a></li>
+                <li [routerLinkActive]="['active']"><a [routerLink]="['users']">USERS</a></li>
+                <li [routerLinkActive]="['active']"><a [routerLink]="['user/1']">ABOUT</a></li>
+            </ul>
+        </nav>
+        <div id="heading">
+            <h1>Home</h1>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+<footer>
+    <div id="footer">
+        <div id="twitter"></div>
+        <div id="social"></div>
+        <div id="footer-logo">
+            <a href="/"><img src="./app/whitesquare%20logo.png" alt="Whitesquare logo"></a>
+            <p>Copyright © 2017 Whitesquare.</p>
+        </div>
+    </div>
+</footer>
